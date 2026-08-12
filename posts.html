@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 · t2-shop-roundlog</title>
+  <meta name="description" content="t2-shop-roundlog에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://shop.roundlog.site/posts.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+    /* CSS Reset & Variable Definitions */
+    :root {
+      --primary-color: #1e293b;
+      --secondary-color: #475569;
+      --accent-color: #f59e0b;
+      --bg-color: #f8fafc;
+      --card-bg: #ffffff;
+      --text-color: #0f172a;
+      --border-color: #cbd5e1;
+      --clip-bg: #f1f5f9;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.7;
+    }
+
+    /* Layout Constants */
+    .q-main-23v0 {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+
+    /* Navigation Bar */
+    .q-grid-do4c-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 1.5rem;
+      background-color: var(--primary-color);
+      color: #ffffff;
+    }
+
+    .m-nav-logo {
+      font-weight: 800;
+      font-size: 1.25rem;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .m-nav-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .m-nav-links a {
+      color: #cbd5e1;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+
+    .m-nav-links a:hover {
+      color: var(--accent-color);
+    }
+
+    /* Clip Grid Layout (Unique structure for Intro page) */
+    .clip-grid-container {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .clip-card-hero {
+      grid-column: span 8;
+      background-color: var(--card-bg);
+      border: 2px solid var(--primary-color);
+      padding: 2.5rem;
+      position: relative;
+      box-shadow: 6px 6px 0px var(--primary-color);
+    }
+
+    .clip-card-sidebar {
+      grid-column: span 4;
+      background-color: var(--clip-bg);
+      border: 2px dashed var(--secondary-color);
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .clip-card-full {
+      grid-column: span 12;
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      padding: 2rem;
+      margin-top: 1rem;
+      border-radius: 4px;
+    }
+
+    /* Decorative & Indicator Elements */
+    .x-card-ou2z-indicator {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 6px;
+      background-color: var(--accent-color);
+    }
+
+    .r-img-po6s {
+      width: 100%;
+      height: auto;
+      max-height: 250px;
+      object-fit: cover;
+      border: 1px solid var(--border-color);
+      margin-bottom: 1.5rem;
+    }
+
+    /* Typography styling */
+    h1 {
+      font-size: 2.25rem;
+      font-weight: 900;
+      color: var(--primary-color);
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+      border-bottom: 2px solid var(--accent-color);
+      padding-bottom: 0.3rem;
+      display: inline-block;
+    }
+
+    p {
+      margin-bottom: 1.2rem;
+      font-size: 1.05rem;
+      color: var(--secondary-color);
+    }
+
+    .highlight-box {
+      background-color: #fef3c7;
+      border-left: 4px solid var(--accent-color);
+      padding: 1rem;
+      margin: 1.5rem 0;
+      font-style: italic;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 3rem 1rem;
+      color: var(--secondary-color);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--border-color);
+      margin-top: 4rem;
+    }
+
+    /* Responsive adjustment */
+    @media (max-width: 768px) {
+      .clip-grid-container {
+        grid-template-columns: 1fr;
+      }
+      .clip-card-hero, .clip-card-sidebar {
+        grid-column: span 12;
+      }
+      .q-grid-do4c-inner {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+  </style>
+  <meta property="og:title" content="글 목록 · t2-shop-roundlog">
+  <meta property="og:description" content="t2-shop-roundlog에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://shop.roundlog.site/posts.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 3개</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/바코드-라벨지-호환.html">바코드 라벨지 안 맞아서 버리기 전에 지름부터 재세요</a>
+        <p class="post-item__summary">라벨지 살 때 가로세로 크기만 보고 결제했다가 낭패 보는 사람이 흔합니다. 프린터 뚜껑이 안 닫히거나 내부 축에 고정이 안 되는 문제는 백 퍼센트 내경과 외경을 확인하지 않아서 생깁니다. 제조사마다</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/바코드-스캐너-거치대.html">바코드 판독기 거치대 규격과 무게를 확인해야 하는 이유</a>
+        <p class="post-item__summary">바코드 스캐너 거치대는 다 호환될 것 같지만, 구매 후 반품하는 원인의 대부분은 스캐너 머리가 거치 홈보다 커서 들어가지 않거나 반대로 너무 작아 쑥 빠져버리는 규격 불일치 때문입니다. 본인이 가진</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/영수증-감열지-호환.html">영수증 감열지 호환성 가이드</a>
+        <p class="post-item__summary">감열지 영수증 용지를 살 때 폭 79mm라는 수치만 보고 대충 결제했다가 낭패를 보는 경우가 태반입니다. 용지가 기계에 안 들어가는 진짜 이유는 폭이 아니라 롤의 지름, 즉 외경 때문입니다. 일반적</p>
+      </li>
+      </ul>
+
+    </main>
+  </div>
+</body>
+</html>
