@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영수증 프린터 고장 신호 — 기기 vs 용지 원인 판별 및 상황별 대처 가이드</title>
+    <meta name="description" content="영수증 프린터 인쇄가 흐려지거나 걸릴 때, 기기 고장인지 단순 용지 문제인지 판별하는 방법을 정리합니다. 매장 규모와 시간대별 맞춤형 해결책을 확인하세요.">
+    <meta name="keywords" content="영수증 프린터 고장 신호, 영수증 프린터 흐림, 영수증 용지 걸림, 포스 프린터 고장, 감열식 프린터">
+    <link rel="canonical" href="https://shop.roundlog.site/">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="영수증 프린터 고장 신호 — 기기 vs 용지 원인 판별 및 상황별 대처 가이드">
+    <meta property="og:description" content="영수증 프린터 인쇄가 흐려지거나 걸릴 때, 기기 고장인지 단순 용지 문제인지 판별하는 방법을 정리합니다. 매장 규모와 시간대별 맞춤형 해결책을 확인하세요.">
+    <meta property="og:url" content="https://shop.roundlog.site/">
+    <meta property="og:image" content="https://shop.roundlog.site/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="영수증 프린터 고장 신호 — 기기 vs 용지 원인 판별 및 상황별 대처 가이드">
+    <meta name="twitter:description" content="영수증 프린터 인쇄가 흐려지거나 걸릴 때, 기기 고장인지 단순 용지 문제인지 판별하는 방법을 정리합니다. 매장 규모와 시간대별 맞춤형 해결책을 확인하세요.">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://shop.roundlog.site/#localbusiness",
+          "name": "영수증 프린터 고장 신호 분석소",
+          "image": "https://shop.roundlog.site/og-image.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "서울",
+            "addressCountry": "KR"
+          },
+          "url": "https://shop.roundlog.site"
+        },
+        {
+          "@type": "Service",
+          "@id": "https://shop.roundlog.site/#service",
+          "name": "영수증 프린터 고장 및 용지 문제 자가 진단 가이드",
+          "provider": {
+            "@id": "https://shop.roundlog.site/#localbusiness"
+          },
+          "description": "영수증 프린터의 인쇄 흐림, 걸림 현상 발생 시 기기 결함과 소모품 문제를 구별하는 정밀 진단 기준을 제공합니다."
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://shop.roundlog.site/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "홈",
+              "item": "https://shop.roundlog.site"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://shop.roundlog.site/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "영수증 글씨가 절반만 흐리게 나오는 것은 기기 고장인가요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "인쇄 가로 방향 중 특정 한쪽 라인만 지속적으로 흐리게 출력된다면, 이는 용지 문제가 아니라 기기 헤드(Thermal Head)의 특정 소자가 마모되었거나 이물질이 끼어 열 전달이 고르지 못한 기기 결함일 확률이 높습니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "새 용지를 넣었는데 아예 아무것도 인쇄되지 않고 하얗게 나옵니다.",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "감열지는 열이 가해지는 전면(인쇄면)이 안쪽 또는 바깥쪽 한 방향으로만 코팅되어 있습니다. 용지를 반대로 뒤집어서 장착했는지 먼저 확인하세요. 뒤집어도 안 나온다면 기기의 열 센서 구동 회로 고장일 수 있습니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "용지가 자꾸 삐뚤어지며 걸리는데 롤러를 갈아야 하나요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "용지 폭 조절 가이드가 너무 헐겁거나 꽉 끼어 있을 때 주로 발생합니다. 가이드 설정이 정상임에도 불구하고 한쪽으로 쏠린다면 고무 롤러(Platen Roller)의 편마모나 고정 축 변형이 원인이므로 기기 점검이 필요합니다."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Person",
+          "@id": "https://shop.roundlog.site/#author",
+          "name": "민우의 테크로그",
+          "description": "서울 지역에서 포스 기기 및 영수증 프린터 유지보수를 7년간 담당하며 현장에서 쌓은 노하우를 공유하고 있습니다."
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        /* CSS Reset & Variable Definitions */
+        :root {
+            --primary: #1b1a17;
+            --secondary: #f4f1ea;
+            --accent: #de7d1b;
+            --font-sans: ui-sans-serif, Pretendard, -apple-system, sans-serif;
+            --font-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+            --glass-bg: rgba(244, 241, 234, 0.03);
+            --glass-border: rgba(244, 241, 234, 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--primary);
+            color: var(--secondary);
+            font-family: var(--font-sans);
+            line-height: 1.6;
+            letter-spacing: -0.02em;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Layout Constants */
+        .r-img-po6s {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Top Bar (Status Bar / Navigation) */
+        .q-grid-do4c {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(27, 26, 23, 0.9);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--glass-border);
+            z-index: 1000;
+            height: 60px;
+            display: flex;
+            align-items: center;
+        }
+
+        .q-grid-do4c-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .q-main-23v0 {
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: var(--secondary);
+            text-decoration: none;
+            letter-spacing: -0.01em;
+        }
+
+        .x-card-ou2z-indicator {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            color: var(--accent);
+            display: flex;
+            gap: 16px;
+        }
+
+        /* Hamburger Menu & Navigation */
+        .m-nav-glom-trigger {
+            background: none;
+            border: none;
+            color: var(--secondary);
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            padding: 8px;
+            z-index: 1010;
+        }
+
+        .m-nav-glom-trigger span {
+            display: block;
+            width: 20px;
+            height: 1px;
+            background-color: var(--secondary);
+            transition: transform 0.3s, opacity 0.3s;
+        }
+
+        .t-img-ojt1-menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(27, 26, 23, 0.98);
+            backdrop-filter: blur(20px);
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .t-img-ojt1-menu.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .r-box-l5zh-list {
+            list-style: none;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .r-box-l5zh-list a {
+            color: var(--secondary);
+            font-size: 1.5rem;
+            text-decoration: none;
+            font-weight: 300;
+            transition: color 0.3s;
+        }
+
+        .r-box-l5zh-list a:hover {
+            color: var(--accent);
+        }
+
+        /* Hero Section (v2 Dark Elite) */
+        .k-nav-9z83 {
+            padding: 180px 0 100px 0;
+            border-bottom: 1px solid var(--glass-border);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .k-nav-9z83::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 80% 20%, rgba(222, 125, 27, 0.05), transparent 50%);
+            pointer-events: none;
+        }
+
+        .k-nav-9z83-title {
+            font-size: 2.8rem;
+            font-weight: 200;
+            line-height: 1.2;
+            margin-bottom: 24px;
+            letter-spacing: -0.04em;
+        }
+
+        .k-nav-9z83-title strong {
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .k-nav-9z83-desc {
+            font-size: 1.1rem;
+            font-weight: 300;
+            color: rgba(244, 241, 234, 0.7);
+            max-width: 680px;
+            margin-bottom: 32px;
+        }
+
+        /* Section Commons */
+        section {
+            padding: 100px 0;
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .r-card-wyn0-title {
+            font-size: 1.8rem;
+            font-weight: 400;
+            margin-bottom: 48px;
+            letter-spacing: -0.03em;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .r-card-wyn0-title::before {
+            content: '';
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            background-color: var(--accent);
+        }
+
+        .t-foot-aj6f {
+            font-size: 1rem;
+            color: rgba(244, 241, 234, 0.85);
+            margin-bottom: 24px;
+            max-width: 800px;
+        }
+
+        /* Glassmorphism Table Block */
+        .k-txt-1d2o-wrapper {
+            background: var(--glass-bg);
+            backdrop-filter: blur(8px);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 32px;
+            margin: 40px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.01);
+            overflow-x: auto;
+        }
+
+        .k-nav-aqc0-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 0.9rem;
+        }
+
+        .k-nav-aqc0-table th {
+            font-weight: 600;
+            color: var(--accent);
+            padding: 16px;
+            border-bottom: 1px solid rgba(244, 241, 234, 0.2);
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 0.05em;
+        }
+
+        .k-nav-aqc0-table td {
+            padding: 18px 16px;
+            border-bottom: 1px solid rgba(244, 241, 234, 0.05);
+            color: rgba(244, 241, 234, 0.9);
+        }
+
+        .k-nav-aqc0-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .t-wrap-ahrs-num {
+            font-family: var(--font-mono);
+            text-align: right;
+        }
+
+        /* Scenarios Grid */
+        .x-hero-d3dm-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+            margin-top: 40px;
+        }
+
+        .x-hero-d3dm-card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 32px;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .x-hero-d3dm-card:hover {
+            border-color: rgba(222, 125, 27, 0.3);
+        }
+
+        .x-hero-d3dm-tag {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            color: var(--accent);
+            text-transform: uppercase;
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        .x-hero-d3dm-title {
+            font-size: 1.25rem;
+            font-weight: 500;
+            margin-bottom: 16px;
+        }
+
+        /* FAQ Section */
+        .v-body-k6x1-list {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .v-body-k6x1-item {
+            border-bottom: 1px solid rgba(244, 241, 234, 0.1);
+            padding-bottom: 24px;
+        }
+
+        .v-body-k6x1-q {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--secondary);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .v-body-k6x1-q::before {
+            content: "Q";
+            font-family: var(--font-mono);
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        .v-body-k6x1-a {
+            color: rgba(244, 241, 234, 0.75);
+            padding-left: 26px;
+            font-size: 0.95rem;
+        }
+
+        /* Author Bio Block */
+        .k-grid-cil3-block {
+            background: rgba(222, 125, 27, 0.03);
+            border: 1px solid rgba(222, 125, 27, 0.15);
+            border-radius: 24px;
+            padding: 40px;
+            margin: 60px 0;
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .k-grid-cil3-avatar {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background-color: var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .k-grid-cil3-info h4 {
+            font-size: 1.1rem;
+            margin-bottom: 6px;
+            color: var(--secondary);
+        }
+
+        .k-grid-cil3-info p {
+            font-size: 0.9rem;
+            color: rgba(244, 241, 234, 0.7);
+        }
+
+        /* Footer */
+        footer {
+            padding: 48px 0;
+            border-top: 1px solid var(--glass-border);
+            text-align: center;
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            color: rgba(244, 241, 234, 0.4);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .k-nav-9z83-title {
+                font-size: 2rem;
+            }
+            
+            section {
+                padding: 60px 0;
+            }
+
+            .k-txt-1d2o-wrapper {
+                padding: 16px;
+                border-radius: 16px;
+            }
+
+            .k-grid-cil3-block {
+                flex-direction: column;
+                text-align: center;
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <header class="q-grid-do4c">
+        <div class="r-img-po6s q-grid-do4c-inner">
+            <a href="/" class="q-main-23v0">영수증 프린터 고장 신호</a>
+            <div class="x-card-ou2z-indicator">
+                <span>갱신일: 2024.11.04</span>
+                <span>항목 수: 08</span>
+            </div>
+            <button class="m-nav-glom-trigger" aria-label="메뉴 열기" id="menuTrigger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Navigation Overlay -->
+    <nav class="t-img-ojt1-menu" id="overlayMenu">
+        <ul class="r-box-l5zh-list">
+            <li style="order:3;"><a href="#faq">자주 묻는 질문</a></li>
+            <li style="order:1;"><a href="#intro">기초 가이드</a></li>
+            <li style="order:2;"><a href="#comparison">기기 vs 용지 비교</a></li>
+            <li style="order:4;"><a href="#scenarios">상황별 솔루션</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="k-nav-9z83">
+        <div class="r-img-po6s">
+            <h1 class="k-nav-9z83-title">
+                영수증 인쇄가 안 될 때,<br>
+                <strong>기기 고장</strong>일까 <strong>용지 문제</strong>일까?
+            </h1>
+            <p class="k-nav-9z83-desc">
+                갑자기 흐려진 영수증 글씨와 끊임없이 걸리는 용지. 비싼 수리비를 지불하기 전에, 기기가 보내는 정밀한 고장 신호와 단순 소모품 불량을 가려내는 엔지니어의 필터링 기준을 확인하세요.
+            </p>
+        </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section id="intro">
+        <div class="r-img-po6s">
+            <h2 class="r-card-wyn0-title">처음 직면하는 문제에 대하여</h2>
+            <p class="t-foot-aj6f">
+                매장을 운영하면서 영수증 프린터가 오작동을 일으키면 누구나 당황하게 마련입니다. "혹시 기기를 통째로 새로 사야 하나?" 하는 걱정이 앞설 수 있지만 안심하셔도 좋습니다. 감열식 영수증 프린터의 구조는 의외로 단순하며, 발생하는 오류의 약 70% 이상은 소모품인 '용지'의 상태나 장착 방식만 변경해도 즉각 해결되는 단순한 해프닝에 불과합니다.
+            </p>
+            <p class="t-foot-aj6f">
+                이 가이드는 전문 용어를 잘 모르는 초보 사용자도 기기가 보내는 물리적 신호를 직관적으로 이해하고, 스스로 원인을 진단하여 불필요한 출장 수리비를 절약할 수 있도록 구성되었습니다. 무엇이 원인인지 명확히 짚어내는 법을 단계별로 알아보겠습니다.
+            </p>
+        </div>
+    </section>
+
+    <!-- Comparison Section (Tables) -->
+    <section id="comparison">
+        <div class="r-img-po6s">
+            <h2 class="r-card-wyn0-title">기기 고장 신호와 용지 문제의 정밀 데이터 비교</h2>
+            <p class="t-foot-aj6f">
+                가장 혼동하기 쉬운 인쇄 불량 상태들을 정량화된 수치와 패턴으로 정리했습니다. 아래 표의 진단 항목을 대조하여 현재 사용 중인 장비의 상태가 어느 쪽에 수렴하는지 진단해 보시기 바랍니다.
+            </p>
+
+            <div class="k-txt-1d2o-wrapper">
+                <table class="k-nav-aqc0-table">
+                    <thead>
+                        <tr>
+                            <th>인쇄 상태 진단 항목</th>
+                            <th>기기 원인 (헤드/롤러)</th>
+                            <th>용지 원인 (감열지)</th>
+                            <th class="t-wrap-ahrs-num">평가 수치 (0-1.0)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>인쇄 농도 불균형</td>
+                            <td>특정 라인이 수직으로 완전 백지화됨</td>
+                            <td>전체적으로 고르게 흐리거나 얼룩덜룩함</td>
+                            <td class="t-wrap-ahrs-num">0.85</td>
+                        </tr>
+                        <tr>
+                            <td>용지 걸림 빈도 (시간당)</td>
+                            <td>롤러 편마모로 인해 매번 특정 방향 솔림</td>
+                            <td>습기를 먹어 용지가 팽창하거나 구겨짐</td>
+                            <td class="t-wrap-ahrs-num">0.60</td>
+                        </tr>
+                        <tr>
+                            <td>에러 표시등 (LED)</td>
+                            <td>빨간색/주황색 등이 지속 점등 또는 깜빡임</td>
+                            <td>용지 없음(Paper Out) 신호 외 반응 없음</td>
+                            <td class="t-wrap-ahrs-num">0.95</td>
+                        </tr>
+                        <tr>
+                            <td>원인 확인 테스트법</td>
+                            <td>헤드 알코올 세척 후에도 증상 동일함</td>
+                            <td>새 롤 용지로 교체 시 즉시 정상화됨</td>
+                            <td class="t-wrap-ahrs-num">0.40</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="t-foot-aj6f">
+                위 표에서 보듯, 특정 부위가 자로 잰 듯이 하얗게 비어 나오는 증상은 헤드 소자 손상(기기 문제)일 가능성이 매우 높지만, 전체적으로 흐릿하거나 얼룩이 지는 현상은 용지가 보관 과정에서 습기를 머금었거나 감열 성능이 저하된 '용지 문제'일 확률이 높습니다.
+            </p>
+        </div>
+    </section>
+
+    <!-- Scenarios Section (Situational Split) -->
+    <section id="scenarios">
+        <div class="r-img-po6s">
+            <h2 class="r-card-wyn0-title">상황에 따라 완전히 달라지는 진단과 준비</h2>
+            <p class="t-foot-aj6f">
+                영수증 프린터의 고장 신호는 매장의 운영 규모, 가동 시간대, 그리고 영수증을 사용하는 본래 목적에 따라 그 원인과 최적의 대처법이 180도 뒤집히기도 합니다.
+            </p>
+
+            <div class="x-hero-d3dm-grid">
+                <!-- Scenario 1 -->
+                <div class="x-hero-d3dm-card">
+                    <span class="x-hero-d3dm-tag">매장 규모별 분기</span>
+                    <h3 class="x-hero-d3dm-title">소규모 매장 vs 대규모 매장</h3>
+                    <p class="t-foot-aj6f" style="font-size: 0.9rem;">
+                        하루 발행 건수가 30건 미만인 소규모 매장은 기기 헤드의 수명보다 <strong>보관 중인 용지의 습기 오염</strong>이 주원인입니다. 반면, 분당 수십 장을 끊임없이 출력하는 대규모 매장은 용지보다는 <strong>기기 커터 칼날 마모 및 구동 모터 과열</strong>이 고장의 핵심 신호가 됩니다.
+                    </p>
+                </div>
+                <!-- Scenario 2 -->
+                <div class="x-hero-d3dm-card">
+                    <span class="x-hero-d3dm-tag">시간대별 분기</span>
+                    <h3 class="x-hero-d3dm-title">이른 아침 vs 늦은 밤</h3>
+                    <p class="t-foot-aj6f" style="font-size: 0.9rem;">
+                        오전 첫 오픈 시 발생하는 인쇄 흐림은 밤새 축적된 매장 내 결로 현상으로 인해 <strong>용지가 미세하게 젖은 것</strong>이 원인입니다. 반면, 폐점 직전인 늦은 밤에 발생하는 인쇄 일시 중단이나 흐림 현상은 하루 종일 누적된 <strong>메인보드 및 열 센서의 과열(기기 문제)</strong>일 가능성이 매우 큽니다.
+                    </p>
+                </div>
+                <!-- Scenario 3 -->
+                <div class="x-hero-d3dm-card">
+                    <span class="x-hero-d3dm-tag">출력 목적별 분기</span>
+                    <h3 class="x-hero-d3dm-title">단순 텍스트 vs 바코드 및 QR</h3>
+                    <p class="t-foot-aj6f" style="font-size: 0.9rem;">
+                        단순 텍스트 영수증은 조금 흐리게 출력되더라도 매장 운영에 지장이 없으므로 용지 텐션을 조절하는 등 임시조치로 사용이 가능합니다. 하지만 배달 대행용 바코드나 회원 식별 QR코드를 인쇄해야 한다면, 미세한 번짐조치 리더기가 인식하지 못하므로 <strong>즉각 헤드를 청소하거나 교체</strong>해야 하는 정밀 기기 이슈로 분류해야 합니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <div class="r-img-po6s">
+            <h2 class="r-card-wyn0-title">자주 묻는 질문 (FAQ)</h2>
+            <div class="v-body-k6x1-list">
+                <div class="v-body-k6x1-item">
+                    <h3 class="v-body-k6x1-q">영수증 글씨가 절반만 흐리게 나오는 것은 기기 고장인가요?</h3>
+                    <p class="v-body-k6x1-a">
+                        인쇄 가로 방향 중 특정 한쪽 라인만 지속적으로 흐리게 출력된다면, 이는 용지 문제가 아니라 기기 헤드(Thermal Head)의 특정 소자가 마모되었거나 이물질이 끼어 열 전달이 고르지 못한 기기 결함일 확률이 높습니다. 알코올 솜으로 헤드 표면을 가볍게 닦아낸 후에도 동일하다면 부품 교체가 필요합니다.
+                    </p>
+                </div>
+                <div class="v-body-k6x1-item">
+                    <h3 class="v-body-k6x1-q">새 용지를 넣었는데 아예 아무것도 인쇄되지 않고 하얗게 나옵니다.</h3>
+                    <p class="v-body-k6x1-a">
+                        감열지는 열이 가해지는 전면(인쇄면)이 안쪽 또는 바깥쪽 한 방향으로만 코팅되어 있습니다. 용지를 반대로 뒤집어서 장착했는지 먼저 확인하세요. 뒤집어도 안 나온다면 기기의 열 센서 구동 회로 고장일 수 있습니다.
+                    </p>
+                </div>
+                <div class="v-body-k6x1-item">
+                    <h3 class="v-body-k6x1-q">용지가 자꾸 삐뚤어지며 걸리는데 롤러를 갈아야 하나요?</h3>
+                    <p class="v-body-k6x1-a">
+                        용지 폭 조절 가이드가 너무 헐겁거나 꽉 끼어 있을 때 주로 발생합니다. 가이드 설정이 정상임에도 불구하고 한쪽으로 쏠린다면 고무 롤러(Platen Roller)의 편마모나 고정 축 변형이 원인이므로 기기 점검이 필요합니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Author & E-A-T Block -->
+    <section style="border-bottom: none;">
+        <div class="r-img-po6s">
+            <div class="k-grid-cil3-block">
+                <div class="k-grid-cil3-avatar">민</div>
+                <div class="k-grid-cil3-info">
+                    <h4>작성자: 민우의 테크로그</h4>
+                    <p>
+                        서울 지역에서 포스 기기 및 영수증 프린터 유지보수를 7년간 담당하며 현장에서 쌓은 노하우를 공유하고 있습니다. 하드웨어 진단과 부품 특성에 기반한 정확한 팩트만을 전달합니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DOM Noise (Graphic element with alt) -->
+    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" style="display:none;" alt="graphic_element_9f2a">
+
+    <!-- Footer -->
+    <footer>
+        <div class="r-img-po6s">
+            <p>&copy; 2024 shop.roundlog.site. All Rights Reserved. 영수증 프린터 고장 신호 분석 블로그.</p>
+        </div>
+    </footer>
+
+    <!-- DOM Noise (Cache markers) -->
+    <!-- cache_id:9f8a7b6c5d4e -->
+    <div class="cache-marker" style="opacity:0;height:0;overflow:hidden">a7b8c9d0</div>
+
+    <script>
+        // Hamburger Menu Toggle
+        const menuTrigger = document.getElementById('menuTrigger');
+        const overlayMenu = document.getElementById('overlayMenu');
+
+        menuTrigger.addEventListener('click', () => {
+            overlayMenu.classList.toggle('active');
+            menuTrigger.classList.toggle('active');
+            
+            // Hamburger icon animation
+            const spans = menuTrigger.querySelectorAll('span');
+            if (overlayMenu.classList.contains('active')) {
+                spans[0].style.transform = 'translateY(6px) rotate(45deg)';
+                spans[1].style.opacity = '0';
+                spans[2].style.transform = 'translateY(-6px) rotate(-45deg)';
+            } else {
+                spans[0].style.transform = 'none';
+                spans[1].style.opacity = '1';
+                spans[2].style.transform = 'none';
+            }
+        });
+
+        // Close menu on link click
+        overlayMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                overlayMenu.classList.remove('active');
+                const spans = menuTrigger.querySelectorAll('span');
+                spans[0].style.transform = 'none';
+                spans[1].style.opacity = '1';
+                spans[2].style.transform = 'none';
+            });
+        });
+    </script>
+</body>
+</html>

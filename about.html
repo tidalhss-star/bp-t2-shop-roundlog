@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>소개 — 은퇴한 엔지니어의 참견</title>
+  <meta name="description" content="영수증 프린터 인쇄가 흐려지거나 걸릴 때, 기기 고장인지 단순 용지 문제인지 판별하는 방법을 정리합니다. 매장 규모와 시간대별 맞춤형 해결책을 확인하세요.">
+  <meta name="keywords" content="영수증 프린터 고장 신호, 영수증 프린터 흐림, 영수증 용지 걸림, 포스 프린터 고장, 감열식 프린터">
+  <link rel="canonical" href="https://shop.roundlog.site/about.html">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="소개 — 은퇴한 엔지니어의 참견">
+  <meta property="og:description" content="영수증 프린터 인쇄가 흐려지거나 걸릴 때, 기기 고장인지 단순 용지 문제인지 판별하는 방법을 정리합니다. 매장 규모와 시간대별 맞춤형 해결책을 확인하세요.">
+  <meta property="og:url" content="https://shop.roundlog.site/about.html">
+
+  <style>
+    /* CSS Reset & Variable Definitions */
+    :root {
+      --primary-color: #1e293b;
+      --secondary-color: #475569;
+      --accent-color: #f59e0b;
+      --bg-color: #f8fafc;
+      --card-bg: #ffffff;
+      --text-color: #0f172a;
+      --border-color: #cbd5e1;
+      --clip-bg: #f1f5f9;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.7;
+    }
+
+    /* Layout Constants */
+    .q-main-23v0 {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+
+    /* Navigation Bar */
+    .q-grid-do4c-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 1.5rem;
+      background-color: var(--primary-color);
+      color: #ffffff;
+    }
+
+    .m-nav-logo {
+      font-weight: 800;
+      font-size: 1.25rem;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .m-nav-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .m-nav-links a {
+      color: #cbd5e1;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+
+    .m-nav-links a:hover {
+      color: var(--accent-color);
+    }
+
+    /* Clip Grid Layout (Unique structure for Intro page) */
+    .clip-grid-container {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .clip-card-hero {
+      grid-column: span 8;
+      background-color: var(--card-bg);
+      border: 2px solid var(--primary-color);
+      padding: 2.5rem;
+      position: relative;
+      box-shadow: 6px 6px 0px var(--primary-color);
+    }
+
+    .clip-card-sidebar {
+      grid-column: span 4;
+      background-color: var(--clip-bg);
+      border: 2px dashed var(--secondary-color);
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .clip-card-full {
+      grid-column: span 12;
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      padding: 2rem;
+      margin-top: 1rem;
+      border-radius: 4px;
+    }
+
+    /* Decorative & Indicator Elements */
+    .x-card-ou2z-indicator {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 6px;
+      background-color: var(--accent-color);
+    }
+
+    .r-img-po6s {
+      width: 100%;
+      height: auto;
+      max-height: 250px;
+      object-fit: cover;
+      border: 1px solid var(--border-color);
+      margin-bottom: 1.5rem;
+    }
+
+    /* Typography styling */
+    h1 {
+      font-size: 2.25rem;
+      font-weight: 900;
+      color: var(--primary-color);
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+      border-bottom: 2px solid var(--accent-color);
+      padding-bottom: 0.3rem;
+      display: inline-block;
+    }
+
+    p {
+      margin-bottom: 1.2rem;
+      font-size: 1.05rem;
+      color: var(--secondary-color);
+    }
+
+    .highlight-box {
+      background-color: #fef3c7;
+      border-left: 4px solid var(--accent-color);
+      padding: 1rem;
+      margin: 1.5rem 0;
+      font-style: italic;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 3rem 1rem;
+      color: var(--secondary-color);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--border-color);
+      margin-top: 4rem;
+    }
+
+    /* Responsive adjustment */
+    @media (max-width: 768px) {
+      .clip-grid-container {
+        grid-template-columns: 1fr;
+      }
+      .clip-card-hero, .clip-card-sidebar {
+        grid-column: span 12;
+      }
+      .q-grid-do4c-inner {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+  </style>
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <nav class="q-grid-do4c">
+    <div class="q-grid-do4c-inner">
+      <a href="/" class="m-nav-logo">레트로 테크 다이어리</a>
+      <div class="m-nav-links">
+        <a href="/">홈</a>
+        <a href="/intro" style="color: var(--accent-color); font-weight: bold;">소개</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content Wrapper -->
+  <main class="q-main-23v0">
+    <div class="clip-grid-container">
+      
+      <!-- Hero Introduction Section -->
+      <section class="clip-card-hero">
+        <div class="x-card-ou2z-indicator"></div>
+        <h1>내가 누구냐고? 대단한 사람은 아니고, 그저 밥그릇 꽤나 깨먹은 늙은이지</h1>
+        
+        <p>요즘 젊은 사장님들 장사하는 거 보면 참 대단해요. 가게 인테리어도 번지르르하게 잘 꾸며놓고, 인스타니 뭐니 마케팅도 기가 막히게 하더라고. 그런데 말이지, 정작 카운터 구석탱이에서 매일 푼돈 찍어내는 영수증 프린터가 삐걱거리기 시작하면 다들 멘붕이 와서 발만 동동 굴러요. 기계라는 게 원래 영원히 멀쩡할 수가 없는 건데, 아주 기본적인 "영수증 프린터 고장 신호"조차 눈치채지 못해서 엄한 데 돈을 쓰거나 멀쩡한 기계를 통째로 쓰레기통에 처박는 꼴을 보면 참 안타깝기도 하고, 솔직히 속으로 헛웃음도 좀 나옵니다.</p>
+        
+        <p>굳이 내 소개를 구질구질하게 늘어놓을 생각은 없어요. 그냥 옛날에 용산 선인상가 바닥에서 조립 PC 바람이 불던 시절부터 온갖 포스기랑 감열식 프린터를 내 손으로 뜯고 조립하던 퇴물 엔지니어 정도로만 알아두면 됩니다. 지금은 현업에서 물러나서 남들이 쩔쩔매는 거 구경이나 하는 팔자 좋은 방관자지만, 내 눈에는 여전히 훤히 보여요. 저 기계가 진짜 수명이 다해서 죽여달라고 비명을 지르는 건지, 아니면 주인이 청소 한번 안 해줘서 삐진 건지 말입니다.</p>
+        
+        <div class="highlight-box">
+          "기계가 말을 안 듣는다고 징징대기 전에, 걔가 밤낮으로 보내던 신호들을 무시하진 않았는지 가슴에 손을 얹고 생각해보라고."
+        </div>
+
+        <p>내가 현역으로 뛸 때는 말이지, 손님들이 영수증 흐리게 나온다고 기계 고장 났다고 가져오면 그냥 소독용 알코올 솜으로 헤드 슥슥 닦아서 돌려보내곤 했어요. 물론 공임비는 두둑하게 챙겼지. 그게 사기냐고? 아니, 자기가 모르면 몸이 고생하고 돈이 깨지는 게 이 바닥 법칙이잖아. 요즘 애들은 너무 편하게만 살려고 해서 그런가, 기계랑 대화할 줄을 몰라요. 그래서 내가 심심풀이 삼아 이 블로그에 내 오랜 짬밥에서 나온 노하우를 조금씩 끄적여보려는 겁니다. 내가 직접 가줄 것도 아닌데 뭐 어때, 읽고 배우는 건 순전히 그쪽들 몫이지.</p>
+      </section>
+
+      <!-- Sidebar / Character Anecdote -->
+      <aside class="clip-card-sidebar">
+        <div>
+          <h2>필자의 잔소리</h2>
+          <p style="font-size: 0.95rem; margin-top: 1rem;">
+            요즘 나오는 장비들은 예전보다 훨씬 예민해요. 감열지 한 장 잘못 끼워도 기계가 비명을 지른다고. 
+            옛날 투박한 도트 프린터 시절에는 리본이 닳아 찢어질 때까지 굴려도 멀쩡했는데 말이지.
+          </p>
+          <p style="font-size: 0.95rem;">
+            특히 겨울철이나 장마철에 기계가 유독 자주 뻗는 이유가 뭔지 알아요? 습기랑 정전기 때문이야. 
+            이런 사소한 이치를 가르쳐주는 사람이 요즘 어디 있겠어? 다들 새 거 사라고 부추기기만 바쁘지.
+          </p>
+        </div>
+        <div style="border-top: 1px solid var(--border-color); padding-top: 1rem; margin-top: 1rem;">
+          <small style="color: var(--secondary-color);">*본 블로그는 방관자의 시선에서 지극히 주관적인 경험담만을 늘어놓습니다. 태클 걸 거면 그냥 뒤로 가기 누르쇼.*</small>
+        </div>
+      </aside>
+
+      <!-- Detailed Content Section / Clip Card Full -->
+      <section class="clip-card-full">
+        <h2>내가 직접 보았던 멍청한 대처와 진짜 고장 신호들</h2>
+        <p>영수증 프린터가 흐릿하게 나오면 십중팔구는 용지 문제거나 헤드 오염입니다. 싸구려 중국산 무지 감열지를 쓰면 소자가 반응을 안 해서 글자가 금방 날아가요. 진짜 기계 고장 신호는 그렇게 얌전하게 오지 않습니다. 기계 안에서 톱니바퀴가 헛돌며 '틱, 틱' 하는 둔탁한 소리가 나거나, 전원 표시등이 혼자서 빨간불을 켜고 깜빡거리며 먹통이 되는 그런 순간들이 진짜 기계가 살려달라고 지르는 비명입니다.</p>
+        
+        <p>인쇄물에 세로로 길게 하얀 줄이 가면서 글자가 끊겨 나오는 증상도 그래요. 그건 헤드가 긁혔거나 내부 발열 소자가 타버린 거라, 이건 내가 와도 못 고치고 헤드를 통째로 갈거나 기계를 새로 사야 하는 게 맞습니다. 그런데 가로로 듬성듬성 흐릿하게 나오는 건 백 퍼센트 용지 이송 롤러가 마모됐거나 이물질이 끼어서 헛도는 겁니다. 이런 뻔한 차이도 구분 못 하면서 무작정 "AS 센터 불렀는데 출장비 너무 비싸요" 하고 징징대는 걸 보면 참 기가 막힙니다. 여러분 생각은 어때요? 그냥 돈 많으면 매번 기사 불러서 돈 퍼주면 편하긴 하겠지.</p>
+
+        <p>나는 이 블로그를 통해서 무슨 대단한 지식을 전수하거나 업체를 홍보할 생각이 눈곱만큼도 없습니다. 그냥 내가 늙어서 손가락 움직일 힘 있을 때, 길바닥에 버려지는 멀쩡한 기계들이 불쌍해서 몇 자 적어두는 것뿐입니다. 내 글을 읽고 "아, 내 프린터가 그래서 그랬구나" 하고 스스로 고치면 다행이고, 귀찮아서 그냥 새 거 살 거면 그것도 마음대로 하쇼. 어차피 내 돈 나가는 거 아니니까.</p>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 레트로 테크 다이어리. All rights reserved.</p>
+    <p style="font-size: 0.75rem; margin-top: 0.5rem; color: #94a3b8;">본 사이트는 개인의 기술 경험담을 공유하는 공간으로, 특정 제조사와의 상업적 연관이 없습니다.</p>
+  </footer>
+
+</body>
+</html>

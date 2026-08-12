@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shop.roundlog.site/sitemap.xml
+Sitemap: https://shop.roundlog.site/sitemap-pages.xml
